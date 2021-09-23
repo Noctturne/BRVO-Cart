@@ -18,3 +18,18 @@
         color: $light-color;
     }
 }
+
+.products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    padding: 15rem 0;
+
+    &__image {
+        max-width: 60%;
+    }
+}

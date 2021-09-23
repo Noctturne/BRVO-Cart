@@ -1,0 +1,10 @@
+.link-primary {
+    text-decoration: none;
+    color: $primary-color;
+    font-weight: 700;
+    transition: all .2s;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
