@@ -1,0 +1,22 @@
+{
+  "name": "brvo-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noctturne/BRVO-Cart.git"
+  },
+  "author": "BRVO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noctturne/BRVO-Cart/issues"
+  },
+  "homepage": "https://github.com/Noctturne/BRVO-Cart#readme",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}
