@@ -3,13 +3,18 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
 
-$headers-font: 'Poppins', sans-serif;
+$heading-font: 'Poppins', sans-serif;
 $main-font: 'Work Sans', sans-serif;
+
+h1, h2, h3, h4{
+    font-family: $heading-font;
+    font-weight: 700;
+}
 
 /*
     COLORS
 */
-$primary-color: #0f0e1e;
+$primary-color: #0F0E1D;
 $secondary-color: #fe4646;
 $light-color: #f3f3f3;
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +15,52 @@ html {
   font-size: 1rem;
 }
 
+/*
+    FONTS
+*/
+h1, h2, h3, h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/*
+    COLORS
+*/
+/*
+    DISPLAY FONTS
+*/
+.display-1 {
+  font-size: 5rem;
+}
+
 .container {
   max-width: 100%;
-  margin: 2rem;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.hero__image {
+  height: 900px;
+}
+.hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.8;
+  color: #f3f3f3;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
