@@ -20,11 +20,12 @@
                     <span class="site-header__items"></span>
                     <div class="cart" id="cart">
                         <div class="cart__products">
-                            Cart is empty 
+                            <p class="cart__products__name"> Name </p>
+                            <p class="cart__products__nprice"> Price </p>
                         </div>
                         <div class="cart__actions">
-                            <i class="far fa-check-square"></i>
-                            <a href="#" class="product__link link-primary"> Checkout </a>
+                            <i class="fas fa-trash"></i>
+                            <a id="remove-btn" href="#" class="product__link link-primary"> Remove items </a>
                         </div>
                     </div>
                 </div>
@@ -36,7 +37,7 @@
                     </div>
                     <img src="img/hero.png" alt="hero image" class="hero__image img-fluid"/>
                 </section>
-                <section class="products">
+                <section class="products" id="products">
                     <div class="product">
                         <div class="product__card">
                             <img src="img/products/product01.png" alt="Product01" class="product__image"/>
@@ -44,7 +45,7 @@
                                 <h3 class="product__name"> Jacket </h3>
                                 <small class="product__price"> 68.90€ </small>
                             </div>
-                            <a href="#" class="product__link link-primary"> Add to cart </a>
+                            <a href="#" class="product__link link-primary" data-id="1"> Add to cart </a>
                         </div>
                     </div>
                     <div class="product">
@@ -54,7 +55,7 @@
                                 <h3 class="product__name"> Sweater </h3>
                                 <small class="product__price"> 39.25€ </small>
                             </div>
-                            <a href="#" class="product__link link-primary"> Add to cart </a>
+                            <a href="#" class="product__link link-primary" data-id="2"> Add to cart </a>
                         </div>
                     </div>
                     <div class="product">
@@ -64,7 +65,7 @@
                                 <h3 class="product__name"> Skirt </h3>
                                 <small class="product__price"> 28.95€ </small>
                             </div>
-                            <a href="#" class="product__link link-primary"> Add to cart </a>
+                            <a href="#" class="product__link link-primary" data-id="3"> Add to cart </a>
                         </div>
                     </div>
                     <div class="product">
@@ -74,7 +75,7 @@
                                 <h3 class="product__name"> Coat </h3>
                                 <small class="product__price"> 58.90€ </small>
                             </div>
-                            <a href="#" class="product__link link-primary"> Add to cart </a>
+                            <a href="#" class="product__link link-primary" data-id="4"> Add to cart </a>
                         </div>
                     </div>
                     <div class="product">
@@ -84,7 +85,7 @@
                                 <h3 class="product__name"> Sweater </h3>
                                 <small class="product__price"> 39.25€ </small>
                             </div>
-                            <a href="#" class="product__link link-primary"> Add to cart </a>
+                            <a href="#" class="product__link link-primary" data-id="5"> Add to cart </a>
                         </div>
                     </div>
                 </section>

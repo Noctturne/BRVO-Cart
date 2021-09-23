@@ -60,6 +60,12 @@ body {
 .cart__products {
   padding: 2rem;
   border-bottom: 1px solid #0F0E1D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.cart__products__name {
+  padding-right: 1rem;
 }
 .cart__actions {
   text-align: center;
