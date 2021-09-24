@@ -18,6 +18,21 @@ function addProduct(e) {
     e.preventDefault();
 
     if(e.target.classList.contains('product__link')){
-        console.log("Testing...");
+        const selectedproduct = e.target.parentElement;
+        getData(selectedproduct);
     }
+}
+
+/* READ CONTENT */
+function getData(product) {
+
+    // Content
+    const infoProduct = {
+        image: product.querySelector('img').src,
+        name: product.querySelector('h3').textContent,
+        price: product.querySelector('small').textContent,
+        id: product.querySelector('a').getAttribute('data-id'),
+    }
+
+    console.log(infoProduct);
 }
