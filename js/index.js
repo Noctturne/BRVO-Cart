@@ -22,6 +22,12 @@ function eventListeners() {
     productList.addEventListener('click', addProduct);
     // Remove product
     cart.addEventListener('click', removeProduct);
+    // Show items if exists in ls
+    document.addEventListener('DOMContentLoadeed', () => {
+        productsCart = JSON.parse(localStorage.getItem('cart')) || [];
+        cleanHTML();
+    });
+
     // Remove all products
     removeItemsBTN.addEventListener('click', () => {
         productsCart = [];
@@ -126,6 +132,13 @@ function showProducts() {
 
         cartContainer.appendChild(row);
     });
+
+    // Add cart to storage
+    storage();
+}
+
+function storage() {
+    localStorage.setItem('cart', JSON.stringify(productsCart));
 }
 
 /* CLEAN PRODUCTS  */ 
