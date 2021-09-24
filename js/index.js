@@ -20,8 +20,15 @@ eventListeners();
 function eventListeners() {
     cartIcon.addEventListener('click', toggleCart);
     productList.addEventListener('click', addProduct);
-    // Remove products
+    // Remove product
     cart.addEventListener('click', removeProduct);
+    // Remove all products
+    removeItemsBTN.addEventListener('click', () => {
+        productsCart = [];
+        amountProductsCart = '';
+        cartAmmount.innerHTML = amountProductsCart;
+        cleanHTML();
+    });
 }
 
 
