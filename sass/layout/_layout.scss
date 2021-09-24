@@ -15,6 +15,11 @@
     transform: translateX(-100%);
     border: 1px solid black;
 
+
+    @media only screen and (max-width: $breakpoint-sm) {
+        transform: translateX(-5%);
+    }
+
     &__products {
         padding: 2rem;
         border-bottom: 1px solid $primary-color;
@@ -33,7 +38,11 @@
 
 .hero {
     &__image {
-        height: 900px;
+        height: 80rem;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            height: auto;
+        }
     }
 
     &__title {
@@ -43,6 +52,10 @@
         transform: translate(-50%, -50%);
         opacity: 0.8;
         color: $light-color;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            display: none;
+        }
     }
 }
 
@@ -56,7 +69,16 @@
 .product {
     padding: 15rem 0;
 
+    @media only screen and (max-width: $breakpoint-md) {
+        padding: 2rem 0;
+    }
+
     &__image {
         max-width: 60%;
+
+        @media only screen and (max-width: $breakpoint-md) {
+            max-width: 100%;
+            height: auto;
+        }
     }
 }

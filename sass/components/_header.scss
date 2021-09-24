@@ -4,14 +4,11 @@
     align-items: center;
     padding: 1.5rem 0;
 
+    &__logo-box img{
+        width: 60%;
+    }
 
     &__cart-box {
         cursor: pointer;
-
-        &:hover{
-            .cart {
-                display: block;
-            }
-        }
     }
 }
