@@ -11,12 +11,31 @@ const productList = document.querySelector('#products');
 let productsCart = [];
 let amountProductsCart = 0;
 
+/* Cart icon */
+const cartIcon = document.querySelector('.site-header__icon');
+
+
+
 eventListeners();
 function eventListeners() {
+    cartIcon.addEventListener('click', toggleCart);
     productList.addEventListener('click', addProduct);
+    // Remove products
+    cart.addEventListener('click', removeProduct);
 }
 
+
+
 /* FUNCTIONS */
+function toggleCart(){
+    if(cart.style.display === "none") {
+        cart.style.display = "block";
+    } else {
+        cart.style.display = "none";
+    }
+}
+
+
 function addProduct(e) {
     e.preventDefault();
 
@@ -25,6 +44,11 @@ function addProduct(e) {
         getData(selectedproduct);
     }
 }
+
+function removeProduct(e) {
+    console.log(e.target.classList.classList);
+}
+
 
 /* READ CONTENT */
 function getData(product) {

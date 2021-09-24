@@ -45,7 +45,6 @@ body {
 
 .cart {
   display: none;
-  visibility: hidden;
   position: absolute;
   right: 0;
   top: 5rem;
@@ -53,16 +52,11 @@ body {
   min-width: 20rem;
   background-color: #fff;
   transform: translateX(-100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: 1px solid black;
 }
 .cart__products {
   padding: 2rem;
   border-bottom: 1px solid #0F0E1D;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 .cart__products__name {
   padding-right: 1rem;
@@ -70,10 +64,6 @@ body {
 .cart__actions {
   text-align: center;
   padding: 2rem;
-}
-.cart:hover {
-  visibility: visible;
-  display: block;
 }
 
 .hero__image {
@@ -112,7 +102,7 @@ body {
   cursor: pointer;
 }
 .site-header__cart-box:hover .cart {
-  visibility: visible;
+  display: block;
 }
 
 .img-fluid {
