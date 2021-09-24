@@ -46,7 +46,15 @@ function addProduct(e) {
 }
 
 function removeProduct(e) {
-    console.log(e.target.classList.classList);
+    console.log(e.target.classList);
+    if(e.target.classList.contains('delete__product')){
+        amountProductsCart--;
+        cartAmmount.innerHTML = amountProductsCart;
+        const productId = e.target.getAttribute('data-id');
+        productsCart = productsCart.filter( product => product.id !== productId);
+        showProducts();
+        console.log(productsCart);
+    }
 }
 
 
@@ -104,7 +112,7 @@ function showProducts() {
         </td>
         <td>
             <a href="#" class="delete__product" data-id="${id}">
-                <i class="fas fa-times-circle link-primary"></i>
+                X 
             </a>
         </td>
         `;
